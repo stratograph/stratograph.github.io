@@ -56,14 +56,28 @@ html, body {
 .v-bar {
   position: absolute;
   height: 100%;
-  width: 11%;
   top: 0;
   left: 15%;
-  border-left: 4px solid #f1eae5;
-  border-right: 4px solid #f1eae5;
+  width: 11%;
 }
 
-.h-bar, .v-bar {
+.v-solid {
+  width: calc(100% - 8px);
+  height: 100%;
+  background-color: #382b21;
+}
+
+.v-bar > div {
+  float: left;
+}
+
+.v-space {
+  width: 4px;
+  background-color: #f1eae5;
+  height: 100%;
+}
+
+.h-bar, .v-solid {
   background-color: #382b21;
 }
 
@@ -82,9 +96,18 @@ html, body {
     padding: 5px;
   }
 
+  .v-space {
+    width: 2px;
+    background-color: #f1eae5;
+    height: 100%;
+  }
+
+  .v-solid {
+    width: calc(100% - 4px);
+  }
+
   .v-bar {
-    border-left: 2px solid #f1eae5;
-    border-right: 2px solid #f1eae5;
+    width: 11%;
   }
 
   .text {
